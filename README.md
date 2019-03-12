@@ -1,19 +1,19 @@
 [Product Info]:https://img.shields.io/badge/ESLint-Config-blue.svg
 [Build Status]:https://www.travis-ci.org/chenzhenyuan/eslint-config-ion.svg?branch=master
-[Publish Version]:https://img.shields.io/npm/v/eslint-config-zals.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com
+[Publish Version]:https://img.shields.io/npm/v/eslint-config-xrosy.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com
 
 
 <!-- --------------------------------------------- -->
 
 
 
-# eslint-config-zals
+# eslint-config-xrosy
 
 ![][Product Info]
 ![][Build Status]
 ![][Publish Version]
 
-ESLint Config for the ZALS JavaScript style guide
+ESLint Config for the xrosy JavaScript style guide
 
 ## Installation
 
@@ -24,10 +24,10 @@ ESLint Config for the ZALS JavaScript style guide
 
 ``` bash
 # For yarn:
-yarn add eslint-config-zals eslint --dev
+yarn add -D eslint eslint-config-xrosy
 
 # For npm:
-npm install --save-dev eslint-config-zals eslint
+npm i --save-dev eslint eslint-config-xrosy
 ```
 
 
@@ -38,7 +38,7 @@ Add ion rules to the plugins section of your .eslintrc configuration file.
 
 ``` json
 {
-  "extends": ["zals"]
+  "extends": ["xrosy"]
 }
 ```
 
@@ -46,7 +46,7 @@ Or
 
 ``` json
 {
-  "extends": ["eslint-config-zals"]
+  "extends": ["eslint-config-xrosy"]
 }
 ```
 
