@@ -1,3 +1,6 @@
+/* eslint array-element-newline: [2, "never"] */
+
+const REACT$SORT_COMP_OPTS = require('./options/react/sort_comp.js');
 
 module.exports = {
     extends : [
@@ -67,7 +70,7 @@ module.exports = {
         'react/require-optimization'                 : [ 0 ],
         'react/require-render-return'                : [ 2 ],
         'react/self-closing-comp'                    : [ 0 ],
-        'react/sort-comp'                            : [ 2 ],
+        'react/sort-comp'                            : [ 2, REACT$SORT_COMP_OPTS ],
         'react/sort-prop-types'                      : [ 0 ],
         'react/style-prop-object'                    : [ 2 ],
         'react/void-dom-elements-no-children'        : [ 2 ],
