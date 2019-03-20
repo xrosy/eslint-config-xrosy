@@ -3,8 +3,8 @@
 
 module.exports = {
     order : [
-        'state',
         'static-methods',
+        'state',
         'everything-else',
         '/^handle.+$/',
         '/^on.+$/',
