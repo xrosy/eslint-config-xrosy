@@ -9,6 +9,7 @@ module.exports = {
 
     rules : {
         'jsx-a11y/click-events-have-key-events' : [ 0 ],
+        'jsx-a11y/interactive-supports-focus'   : [ 0 ],
 
         'react/boolean-prop-naming'                  : [ 0 ],
         'react/default-props-match-prop-types'       : [ 0 ],
