@@ -8,6 +8,8 @@ module.exports = {
     ],
 
     rules : {
+        'jsx-a11y/click-events-have-key-events' : [ 0 ],
+
         'react/boolean-prop-naming'                  : [ 0 ],
         'react/default-props-match-prop-types'       : [ 0 ],
         'react/display-name'                         : [ 0 ],
