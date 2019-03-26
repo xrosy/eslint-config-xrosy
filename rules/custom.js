@@ -23,7 +23,7 @@ module.exports = {
         'eol-last'                   : [ 2, 'always' ],
         'func-style'                 : [ 0 ],
         'id-length'                  : [ 2, { exceptions: [ 'e', 'i', 'k', 'x', 'X', 'z', 'Z' ], min: 1 }],
-        'init-declarations'          : [ 2, 'never' ],
+        'init-declarations'          : [ 1, 'always' ],
         'jsx-quotes'                 : [ 2, 'prefer-double' ],
         'key-spacing'                : [ 2, { align: { afterColon: true, beforeColon: true, on: 'colon' }, multiLine: { afterColon: true, beforeColon: true }, singleLine: { afterColon: true, beforeColon: false } }],
         'keyword-spacing'            : [ 2, { after: true, before: true }],
