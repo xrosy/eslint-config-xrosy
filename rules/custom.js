@@ -22,6 +22,7 @@ module.exports = {
         'dot-location'               : [ 2, 'property' ],
         'eol-last'                   : [ 2, 'always' ],
         'func-style'                 : [ 0 ],
+        'function-paren-newline'     : [ 1, 'consistent' ],
         'id-length'                  : [ 2, { exceptions: [ 'e', 'i', 'k', 'x', 'X', 'z', 'Z' ], min: 1 }],
         'init-declarations'          : [ 1, 'always' ],
         'jsx-quotes'                 : [ 2, 'prefer-double' ],
