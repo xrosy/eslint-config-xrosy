@@ -5,6 +5,7 @@ module.exports = {
     order : [
         'static-methods',
         'state',
+        'constructor',
         'everything-else',
         '/^handle.+$/',
         '/^on.+$/',
