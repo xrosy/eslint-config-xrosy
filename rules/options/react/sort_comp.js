@@ -1,6 +1,4 @@
 /* eslint array-element-newline: [2, "always"] */
-
-
 module.exports = {
     order : [
         'static-methods',

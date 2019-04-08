@@ -3,6 +3,7 @@ module.exports = {
     extends : [
         'plugin:import/recommended',
     ],
+
     rules : {
         'import/extensions'                 : [ 0 ],
         'import/first'                      : [ 2, 'absolute-first' ],

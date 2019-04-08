@@ -1,14 +1,15 @@
 
 module.exports = {
     extends : [
-        'eslint:all', 'plugin:jsx-a11y/recommended',
+        'eslint:recommended',
+        'plugin:jsx-a11y/recommended',
     ],
 
     rules : {
         'array-bracket-newline'      : [ 2, 'consistent' ],
         'array-bracket-spacing'      : [ 2, 'always', { objectsInArrays: false }],
         'array-callback-return'      : [ 2 ],
-        'array-element-newline'      : [ 2, { minItems: null, multiline: true }],
+        'array-element-newline'      : [ 2, 'consistent' ],
         'arrow-body-style'           : [ 2, 'as-needed' ],
         'block-spacing'              : [ 2 ],
         'brace-style'                : [ 2, 'stroustrup' ],
@@ -40,7 +41,7 @@ module.exports = {
         'multiline-ternary'          : [ 0 ],
         'new-parens'                 : [ 2 ],
         'newline-before-return'      : [ 2 ],
-        'newline-per-chained-call'   : [ 2, { ignoreChainWithDepth: 3 }],
+        'newline-per-chained-call'   : [ 2, { ignoreChainWithDepth: 10 }],
         'no-bitwise'                 : [ 1, { allow: [ '~' ], int32Hint: true }],
         'no-console'                 : [ 1 ],
         'no-constant-condition'      : [ 2 ],
@@ -71,6 +72,7 @@ module.exports = {
         'no-undef-init'              : [ 2 ],
         'no-underscore-dangle'       : [ 0, { allowAfterSuper: true, allowAfterThis: true, enforceInMethodNames: false }],
         'no-unreachable'             : [ 0 ],
+        'no-useless-catch'           : [ 0 ],
         'no-unsafe-negation'         : [ 2 ],
         'no-unused-expressions'      : [ 0 ],
         'no-unused-vars'             : [ 1, { vars: 'all', varsIgnorePattern: '(React|window)' }],

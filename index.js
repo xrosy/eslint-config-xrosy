@@ -4,7 +4,6 @@
  * error 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
  */
 
-
 module.exports = {
     env : {
         browser  : true,
@@ -14,7 +13,11 @@ module.exports = {
     },
 
     extends : [
-        './rules/custom.js', './rules/react.js', './rules/import.js',
+        'eslint:recommended',
+        'plugin:react/recommended',
+        './rules/custom.js',
+        './rules/react.js',
+        './rules/import.js',
     ],
 
     globals : {

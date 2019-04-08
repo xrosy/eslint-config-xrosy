@@ -1,13 +1,18 @@
-globals:
-    module: true
-    require: true
-    __dirname: true
+{
+    "globals": {
+        "module": true,
+        "require": true,
+        "__dirname": true
+    },
 
-extends:
-    - ./index.js
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
 
-parserOptions:
-    ecmaVersion: 7
-    sourceType: "module"
-    ecmaFeatures:
-        modules: true
+
+    "extends": [ "./index.js" ]
+}
