@@ -13,8 +13,6 @@ module.exports = {
     },
 
     extends : [
-        'eslint:recommended',
-        'plugin:react/recommended',
         './rules/custom.js',
         './rules/react.js',
         './rules/import.js',
