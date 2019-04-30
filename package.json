@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-xrosy",
   "description": "ESLint Config for the XRosy JavaScript style guide",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "main": "./index.js",
   "license": "MIT",
   "author": "Jason Chen <jason@chenzhenyuan.com>",
@@ -11,7 +11,7 @@
     "url": "https://github.com/xrosy/eslint-config-xrosy"
   },
   "scripts": {
-    "test": "echo \"Complete        : no test specified\" && exit 0"
+    "test": "echo \"Complete : no test specified\" && exit 0"
   },
   "keywords": [
     "eslintconfig",
