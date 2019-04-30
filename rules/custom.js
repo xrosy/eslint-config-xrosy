@@ -1,10 +1,5 @@
-
+/* eslint-disable */
 module.exports = {
-    extends : [
-        'eslint:recommended',
-        'plugin:jsx-a11y/recommended',
-    ],
-
     rules : {
         'array-bracket-newline'      : [ 2, 'consistent' ],
         'array-bracket-spacing'      : [ 2, 'always', { objectsInArrays: false }],
@@ -79,7 +74,7 @@ module.exports = {
         'no-use-before-define'       : [ 2 ],
         'no-void'                    : [ 0 ],
         'no-warning-comments'        : [ 0 ],
-        'object-curly-newline'       : [ 2, { consistent: true, multiline: true }],
+        "object-curly-newline"       : [ 2, { ObjectPattern: { "multiline": true }, ImportDeclaration: {"multiline": true}, ExportDeclaration: { "multiline": true, "minProperties": 3 }}],
         'object-curly-spacing'       : [ 2, 'always', { arraysInObjects: true, objectsInObjects: true }],
         'object-property-newline'    : [ 2, { allowAllPropertiesOnSameLine: true }],
         'object-shorthand'           : [ 2, 'always', { avoidExplicitReturnArrows: true }],

@@ -11,13 +11,9 @@ module.exports = {
         es6      : true,
         node     : true,
     },
-
-    extends : [
-        './rules/custom.js',
-        './rules/react.js',
-        './rules/import.js',
-    ],
-
+    parser  : 'babel-eslint',
+    extends : [ 'eslint:all', './rules/custom.js', './rules/import.js', './rules/react.js' ],
+    plugins : [ 'jsx-a11y', 'import', 'react' ],
     globals : {
         __dirname : true,
         document  : true,
@@ -26,24 +22,15 @@ module.exports = {
         require   : true,
         window    : true,
     },
-
-    parser : 'babel-eslint',
-
     parserOptions : {
         allowImportExportEverywhere : false,
 
-        codeFrame : false,
-
+        codeFrame    : false,
+        ecmaVersion  : 2017,
+        sourceType   : 'module',
         ecmaFeatures : {
             jsx     : true,
             modules : true,
         },
-
-        ecmaVersion : 2017,
-        sourceType  : 'module',
     },
-
-    plugins : [ 'jsx-a11y', 'import', 'react' ],
-
-    root : true,
 };

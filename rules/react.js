@@ -2,6 +2,7 @@
 
 const REACT$SORT_COMP_OPTS = require('./options/react/sort_comp.js');
 
+
 module.exports = {
     extends : [
         'plugin:react/recommended',
