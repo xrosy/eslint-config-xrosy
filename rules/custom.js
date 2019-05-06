@@ -12,6 +12,7 @@ module.exports = {
         'capitalized-comments'       : [ 0 ],
         'class-methods-use-this'     : [ 0 ],
         'comma-dangle'               : [ 2, 'always-multiline' ],
+        'complexity'                 : [ 0 ],
         'consistent-return'          : [ 0 ],
         'curly'                      : [ 2, "multi-or-nest", "consistent" ],
         'default-case'               : [ 0 ],
