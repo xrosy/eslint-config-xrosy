@@ -13,7 +13,7 @@ module.exports = {
         'class-methods-use-this'     : [ 0 ],
         'comma-dangle'               : [ 2, 'always-multiline' ],
         'consistent-return'          : [ 0 ],
-        'curly'                      : [ 2 ],
+        'curly'                      : [ 2, "multi-or-nest", "consistent" ],
         'default-case'               : [ 0 ],
         'dot-location'               : [ 2, 'property' ],
         'eol-last'                   : [ 2, 'always' ],
