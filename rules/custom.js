@@ -80,6 +80,7 @@ module.exports = {
         'object-shorthand'           : [ 2, 'always', { avoidExplicitReturnArrows: true }],
         'one-var'                    : [ 2, 'never' ],
         'padded-blocks'              : [ 2, { blocks: 'never', classes: 'always', switches: 'never' }],
+        "prefer-named-capture-group" : [ 0 ],
         'quote-props'                : [ 2, 'consistent-as-needed' ],
         'quotes'                     : [ 2, 'single' ],
         'require-unicode-regexp'     : [ 0 ],
