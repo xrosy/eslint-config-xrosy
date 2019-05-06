@@ -38,6 +38,7 @@ module.exports = {
         'newline-before-return'      : [ 2 ],
         'newline-per-chained-call'   : [ 2, { ignoreChainWithDepth: 10 }],
         'no-bitwise'                 : [ 1, { allow: [ '~' ], int32Hint: true }],
+        "no-confusing-arrow"         : [ 2, {"allowParens": true}],
         'no-console'                 : [ 1 ],
         'no-constant-condition'      : [ 2 ],
         'no-delete-var'              : [ 2 ],
