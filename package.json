@@ -1,18 +1,11 @@
 {
   "name": "eslint-config-xrosy",
   "description": "ESLint Config for the XRosy JavaScript style guide",
-  "version": "0.1.26",
-  "main": "./index.js",
+  "version": "0.1.27",
+  "main": "./src/index.js",
   "license": "MIT",
   "author": "Jason Chen <jason@chenzhenyuan.com>",
   "homepage": "https://www.xrosy.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xrosy/eslint-config-xrosy"
-  },
-  "scripts": {
-    "test": "echo \"Complete : no test specified\" && exit 0"
-  },
   "keywords": [
     "eslintconfig",
     "eslint",
@@ -22,7 +15,14 @@
     "styleguide"
   ],
   "engines": {
-    "node": ">=8"
+    "node": "> = 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xrosy/eslint-config-xrosy"
+  },
+  "scripts": {
+    "test": "echo \"Complete : no test specified\" && exit 0"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
@@ -31,5 +31,8 @@
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
   }
 }
