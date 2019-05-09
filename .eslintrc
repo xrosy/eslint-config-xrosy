@@ -13,5 +13,5 @@
         }
     },
 
-    "extends": [ "./index.js" ]
+    "extends": [ "./src/index.js" ]
 }
