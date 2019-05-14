@@ -36,33 +36,33 @@ module.exports = {
   parser : 'babel-eslint',
 
   env : {
-    browser       : true,
-    commonjs      : true,
-    es6           : true,
-    node          : true,
-    amd           : true,
-    worker        : true,
-    webextensions : true,
+    browser      : true,
+    commonjs     : true,
+    es6          : true,
+    node         : true,
+    amd          : true,
+    worker       : true,
+    webextensions: true,
   },
 
   globals : {
-    __dirname : true,
-    env       : true,
-    module    : true,
-    require   : true,
-    document  : true,
-    window    : true,
+    __dirname: true,
+    env      : true,
+    module   : true,
+    require  : true,
+    document : true,
+    window   : true,
   },
 
   parserOptions : {
     allowImportExportEverywhere : false,
 
-    codeFrame    : false,
-    ecmaVersion  : 2018,
-    sourceType   : 'module',
-    ecmaFeatures : {
-      jsx     : true,
-      modules : true,
+    codeFrame   : false,
+    ecmaVersion : 2018,
+    sourceType  : 'module',
+    ecmaFeatures: {
+      jsx    : true,
+      modules: true,
     },
   },
 

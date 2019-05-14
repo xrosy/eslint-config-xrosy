@@ -1,17 +1,23 @@
 {
-    "globals": {
-        "module"   : true,
-        "require"  : true,
-        "__dirname": true
-    },
+  "root": true,
 
-    "parserOptions": {
-        "ecmaVersion" : 7,
-        "sourceType"  : "module",
-        "ecmaFeatures": {
-            "modules": true
-        }
-    },
+  "globals": {
+    "module": true,
+    "require": true,
+    "__dirname": true
+  },
 
-    "extends": [ "./src/index.js" ]
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+
+  "extends": ["./src/index.js"],
+
+  "rules": {
+    "react/state-in-constructor": [ 0 ]
+  }
 }

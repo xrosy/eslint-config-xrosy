@@ -1,3 +1,4 @@
+
 const REACT$SORT_COMP_OPTS = require('./sort-comp.opt.js');
 
 module.exports = {
@@ -62,20 +63,16 @@ module.exports = {
     'react/jsx-no-undef'               : [ 2 ],
     'react/jsx-one-expression-per-line': [ 0 ],
     'react/jsx-pascal-case'            : [ 2 ],
-    'react/jsx-props-no-spreading'     : [ 2, {
-      html      : 'ignore',
-      custom    : 'ignore',
-      exceptions: [],
-    }],
-    'react/jsx-sort-props' : [ 0 ],
-    'react/jsx-tag-spacing': [ 2, {
+    'react/jsx-props-no-spreading'     : [ 2, { html: 'ignore', custom: 'ignore' }],
+    'react/jsx-sort-props'             : [ 0 ],
+    'react/jsx-tag-spacing'            : [ 2, {
       afterOpening     : 'never',
       beforeSelfClosing: 'always',
       closingSlash     : 'never',
     }],
     'react/jsx-uses-react'                      : [ 2 ],
     'react/jsx-uses-vars'                       : [ 2 ],
-    'react/jsx-wrap-multilines'                 : [ 0 ],
+    'react/jsx-wrap-multilines'                 : [ 2, { declaration: 'parens-new-line', declaration: 'parens-new-line', condition: 'parens-new-line', logical: 'parens-new-line', return: 'parens-new-line', arrow: 'parens-new-line', prop: 'parens-new-line' }],
     'react/no-array-index-key'                  : [ 0 ],
     'react/no-children-prop'                    : [ 2 ],
     'react/no-danger'                           : [ 1 ],
