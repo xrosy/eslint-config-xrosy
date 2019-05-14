@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+class Tester extends Component {
+
+}
+
+
 class Foo extends React.Component {
 
   // UNSAFE_componentWillMount () {}
@@ -14,12 +19,19 @@ class Foo extends React.Component {
 
   constructor(props) {
     super(props);
-    console.log(props);
-
-    this.state = {};
   }
 
-  render () {
+  asdf() {}
+
+  onSubComponentClick = (e) => {
+    this.handlerButtonCLick(e);
+  }
+
+  handlerButtonCLick() {}
+
+  renderAliasComponents() { }
+
+  render() {
     return (
       <div __html={{ sss: 11 }}></div>
     );

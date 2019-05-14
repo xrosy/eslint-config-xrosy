@@ -8,13 +8,27 @@ const noConsoleValue = (/^com\.microsoft\.vscode.+/ig).test(process.env.XPC_SERV
 
 let gExtends;
 
-try {
-  require('react');
-  gExtends = [ './configs/standard/index.js', './configs/import/index.js', './configs/react/index.js' ];
-}
-catch (err) {
-  gExtends = [ './configs/standard/index.js', './configs/import/index.js' ];
-}
+gExtends = [
+  './configs/standard/index.js',
+  './configs/import/index.js',
+  './configs/react/index.js',
+];
+
+// try {
+//   require('react');
+
+//   gExtends = [
+//     './configs/standard/index.js',
+//     './configs/import/index.js',
+//     './configs/react/index.js',
+//   ];
+// }
+// catch (err) {
+//   gExtends = [
+//     './configs/standard/index.js',
+//     './configs/import/index.js',
+//   ];
+// }
 
 
 /* --------------------------------------------------- */

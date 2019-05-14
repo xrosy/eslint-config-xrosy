@@ -1,12 +1,13 @@
-/* eslint array-element-newline: [2, "always"] */
+
 module.exports = {
   order : [
     'static-methods',
     'state',
     'constructor',
     'everything-else',
-    '/^handle.+$/',
+    '/^get.+$/',
     '/^on.+$/',
+    '/^handle.+$/',
     'lifecycle',
     'rendering',
     'componentWillUpdate',
@@ -18,10 +19,7 @@ module.exports = {
   ],
 
   groups : {
-    rendering : [
-      '/^render.+$/',
-      'render',
-    ],
+    rendering : [ '/^render.+$/', 'render' ],
 
     lifecycle : [
       'displayName',
@@ -44,4 +42,4 @@ module.exports = {
       'shouldComponentUpdate',
     ],
   },
-};
+}

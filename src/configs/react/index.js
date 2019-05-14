@@ -1,19 +1,17 @@
-// const REACT$SORT_COMP_OPTS = require('./options/sort-comp.js');
-
-
-// 'plugin:react/recommended',
+const REACT$SORT_COMP_OPTS = require('./sort-comp.opt.js');
 
 module.exports = {
   extends : [
+    // 'plugin:react/recommended',
     'plugin:react/all',
-    'react/sort-comp',
   ],
 
   settings : {
     react : {
       createClass : 'createReactClass',
       pragma      : 'React',
-      version     : 'detect',
+      version     : '16.6',
+      // version     : 'detect',
       flowVersion : '0.53',
     },
   },
@@ -175,7 +173,9 @@ module.exports = {
 
     'react/sort-prop-types' : [ 0 ],
 
-    'react/state-in-constructor' : [ 2, 'never' ],
+    'react/sort-comp' : [ 1, REACT$SORT_COMP_OPTS ],
+
+    'react/state-in-constructor' : [ 1, 'never' ],
 
     'react/style-prop-object' : [ 2 ],
 
