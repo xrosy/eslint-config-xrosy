@@ -7,9 +7,16 @@ class Foo extends React.Component {
   // UNSAFE_componentWillReceiveProps () {}
 
   // UNSAFE_componentWillUpdate () {}
+
+  state = {
+    VISIABLE : false,
+  };
+
   constructor(props) {
     super(props);
     console.log(props);
+
+    this.state = {};
   }
 
   render () {

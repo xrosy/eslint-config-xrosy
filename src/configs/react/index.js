@@ -1,10 +1,13 @@
-const REACT$SORT_COMP_OPTS = require('./options/sort-comp.js');
+// const REACT$SORT_COMP_OPTS = require('./options/sort-comp.js');
 
 
 // 'plugin:react/recommended',
 
 module.exports = {
-  extends : [ 'plugin:react/all' ],
+  extends : [
+    'plugin:react/all',
+    'react/sort-comp',
+  ],
 
   settings : {
     react : {
