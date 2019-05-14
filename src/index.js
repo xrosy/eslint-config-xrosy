@@ -9,30 +9,15 @@ const noConsoleValue = (/^com\.microsoft\.vscode.+/ig).test(process.env.XPC_SERV
 let gExtends;
 
 gExtends = [
-  './configs/import/index.js',
   './configs/standard/index.js',
+  './configs/import/index.js',
   './configs/react/index.js',
 ];
 
-// try {
-//   require('react');
-
-//   gExtends = [
-//     './configs/standard/index.js',
-//     './configs/import/index.js',
-//     './configs/react/index.js',
-//   ];
-// }
-// catch (err) {
-//   gExtends = [
-//     './configs/standard/index.js',
-//     './configs/import/index.js',
-//   ];
-// }
-
-
 /* --------------------------------------------------- */
 module.exports = {
+  settings : {},
+
   parser : 'babel-eslint',
 
   env : {
@@ -66,11 +51,8 @@ module.exports = {
     },
   },
 
-  settings : {},
 
   extends : gExtends,
-
-  plugins : [ 'jsx-a11y', 'import', 'react' ],
 
   rules : {
     'no-console' : [ noConsoleValue ],
