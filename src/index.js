@@ -9,8 +9,8 @@ const noConsoleValue = (/^com\.microsoft\.vscode.+/ig).test(process.env.XPC_SERV
 let gExtends;
 
 gExtends = [
-  './configs/standard/index.js',
   './configs/import/index.js',
+  './configs/standard/index.js',
   './configs/react/index.js',
 ];
 
