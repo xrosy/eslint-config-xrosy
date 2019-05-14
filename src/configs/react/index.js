@@ -16,6 +16,7 @@ module.exports = {
   },
 
   rules : {
+
     'jsx-a11y/click-events-have-key-events' : [ 0 ],
 
     'jsx-a11y/interactive-supports-focus' : [ 0 ],
@@ -170,6 +171,8 @@ module.exports = {
     'react/self-closing-comp' : [ 0 ],
 
     'react/sort-prop-types' : [ 0 ],
+
+    'react/state-in-constructor' : [ 2, 'never' ],
 
     'react/style-prop-object' : [ 2 ],
 
