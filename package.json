@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-xrosy",
   "description": "ESLint Config for the XRosy JavaScript style guide",
-  "version": "0.1.27",
+  "version": "0.1.28",
   "main": "./src/index.js",
   "license": "MIT",
   "author": "Jason Chen <jason@chenzhenyuan.com>",
