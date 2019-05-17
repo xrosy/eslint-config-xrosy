@@ -179,6 +179,7 @@ module.exports = {
       classes : 'always',
       switches: 'never',
     }],
+    'prefer-object-spread'      : [ 1 ],
     'prefer-named-capture-group': [ 0 ],
     'quote-props'               : [ 2, 'consistent-as-needed' ],
     'quotes'                    : [ 2, 'single' ],
