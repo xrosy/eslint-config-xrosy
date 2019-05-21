@@ -3,21 +3,15 @@ module.exports = {
   order : [
     'state',
     'instance-variables',
-
     'static-methods',
-
     'getters',
     'setters',
-
     'constructor',
     '^_.+$',
-
     'everything-else',
-
     '/^get.+$/',
     '/^on.+$/',
     '/^handle.+$/',
-
     'lifecycle',
     'rendering',
     'componentWillUpdate',
@@ -29,9 +23,8 @@ module.exports = {
   ],
 
   groups : {
-    rendering : [ '/^render.+$/', 'render' ],
-
-    lifecycle : [
+    rendering: [ '/^render.+$/', 'render' ],
+    lifecycle: [
       'displayName',
       'propTypes',
       'contextTypes',

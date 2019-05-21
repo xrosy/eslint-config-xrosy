@@ -28,7 +28,9 @@ module.exports = {
     'jsx-a11y/label-has-for'                    : [ 2, { allowChildren: false, components: [ 'Label' ], required: { every: [ 'nesting', 'id' ]}}],
     'react/boolean-prop-naming'                 : [ 0 ],
     'react/default-props-match-prop-types'      : [ 0 ],
-    'react/destructuring-assignment'            : [ 2, 'always', { ignoreClassFields: true }],
+    /** 强制使用解构模式 */
+    /* 'react/destructuring-assignment'            : [ 2, 'always', { ignoreClassFields: true }], */
+    'react/destructuring-assignment'            : [ 0 ],
     'react/display-name'                        : [ 0 ],
     'react/forbid-component-props'              : [ 0 ],
     'react/forbid-elements'                     : [ 0 ],
