@@ -1,13 +1,23 @@
 
 module.exports = {
   order : [
-    'static-methods',
     'state',
+    'instance-variables',
+
+    'static-methods',
+
+    'getters',
+    'setters',
+
     'constructor',
+    '^_.+$',
+
     'everything-else',
+
     '/^get.+$/',
     '/^on.+$/',
     '/^handle.+$/',
+
     'lifecycle',
     'rendering',
     'componentWillUpdate',
