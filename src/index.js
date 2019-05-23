@@ -4,7 +4,8 @@
  * error 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
  */
 
-const noConsoleValue = process.env.TERM_PROGRAM.toLowerCase() === 'vscode' ? 0 : 2;
+// const noConsoleValue = process.env.TERM_PROGRAM.toLowerCase() === 'vscode' ? 0 : 2;
+const noConsoleValue = 1;
 
 let gExtends;
 
@@ -55,6 +56,6 @@ module.exports = {
   extends : gExtends,
 
   rules : {
-    'no-console' : [ noConsoleValue ],
+    'no-console' : [ noConsoleValue, { allow: [ 'warn', 'error' ]}],
   },
 }
