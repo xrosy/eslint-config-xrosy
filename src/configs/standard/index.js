@@ -39,7 +39,7 @@ module.exports = {
     'comma-dangle'          : [ 2, 'always-multiline' ],
     'complexity'            : [ 0 ],
     'consistent-return'     : [ 0 ],
-    'curly'                 : [ 2, 'multi-or-nest', 'consistent' ],
+    'curly'                 : [ 2, 'multi-line', 'consistent' ],
     'default-case'          : [ 0 ],
     'dot-location'          : [ 2, 'property' ],
     'eol-last'              : [ 2, 'always' ],
