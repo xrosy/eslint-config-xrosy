@@ -5,8 +5,6 @@
 
 <!-- --------------------------------------------- -->
 
-
-
 # eslint-config-xrosy
 
 ![][Product Info]
@@ -24,10 +22,10 @@ ESLint Config for the xrosy JavaScript style guide
 
 ``` bash
 # For yarn:
-yarn add -D eslint eslint-config-xrosy
+yarn add eslint eslint-config-xrosy --dev
 
 # For npm:
-npm i --save-dev eslint eslint-config-xrosy
+npm i eslint eslint-config-xrosy -D
 ```
 
 
