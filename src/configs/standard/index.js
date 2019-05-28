@@ -47,7 +47,7 @@ module.exports = {
     'function-paren-newline': [ 1, 'consistent' ],
     'id-length'             : [ 2, { exceptions: [ 'e', 'i', 'k', 'x', 'X', 'z', 'Z' ],min: 1 }],
     'indent'                : [ 2, 2, { SwitchCase: 1 }],
-    'init-declarations'     : [ 1, 'never', { ignoreForLoopInit: true }],
+    'init-declarations'     : [ 0, 'always', { ignoreForLoopInit: true }],
     'jsx-quotes'            : [ 2, 'prefer-double' ],
     'key-spacing'           : [ 2, {
       align : {
