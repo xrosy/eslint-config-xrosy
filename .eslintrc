@@ -23,4 +23,8 @@
   },
 
   "extends": [ "./src/configs/standard/index.js" ],
+
+  "rules": {
+    "sort-keys": [ 0 ]
+  }
 }

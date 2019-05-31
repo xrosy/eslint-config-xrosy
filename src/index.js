@@ -58,4 +58,4 @@ module.exports = {
   rules : {
     'no-console' : [ noConsoleValue, { allow: [ 'warn', 'error' ]}],
   },
-}
+};
