@@ -1,3 +1,5 @@
+/* eslint sort-keys: [1] */
+
 
 module.exports = {
   // extends: [],
@@ -114,11 +116,11 @@ module.exports = {
     'no-undef-init'             : [ 2 ],
     'no-underscore-dangle'      : [ 0, { allowAfterSuper: true,allowAfterThis: true,enforceInMethodNames: false }],
     'no-unreachable'            : [ 0 ],
-    'no-useless-catch'          : [ 0 ],
     'no-unsafe-negation'        : [ 2 ],
     'no-unused-expressions'     : [ 0 ],
-    'no-unused-vars'            : [ 1, { vars: 'local',varsIgnorePattern: '(React|window)',args: 'after-used' }],
+    'no-unused-vars'            : [ 1, { args: 'after-used', vars: 'local', varsIgnorePattern: '(React|window)' }],
     'no-use-before-define'      : [ 2 ],
+    'no-useless-catch'          : [ 0 ],
     'no-void'                   : [ 1 ],
     'no-warning-comments'       : [ 1 ],
     /* , ExportDeclaration: { multiline: true, minProperties: 3 }, ImportDeclaration: { multiline: true }, ObjectPattern: { multiline: true } */
@@ -145,8 +147,8 @@ module.exports = {
      * 对象选项：
      *  • allowAllPropertiesOnSameLine: true 所有属性都在同一行上，将被允许
      */
-    'object-property-newline': [ 2, { allowAllPropertiesOnSameLine: true }],
-    'object-shorthand'       : [ 2, 'always', { avoidExplicitReturnArrows: true }],
+    'object-property-newline'   : [ 2, { allowAllPropertiesOnSameLine: true }],
+    'object-shorthand'          : [ 2, 'always', { avoidExplicitReturnArrows: true }],
     /**
      * 强制函数中的变量在一起声明或分开声明
      *
@@ -173,17 +175,15 @@ module.exports = {
      *  •  uninitialized: "never"           要求每个作用域的未初始化的变量有多个变量声明
      *  •  uninitialized: "consecutive"     对未初始化的变量，要求其连续的变量声明合并为一个声明
      */
-    'one-var'                : [ 2, 'never' ],
-    'padded-blocks'          : [ 2, {
-      blocks  : 'never',
-      classes : 'always',
-      switches: 'never',
-    }],
-    'prefer-object-spread'      : [ 1 ],
+    'one-var'                   : [ 2, 'never' ],
+    'padded-blocks'             : [ 2, { blocks: 'never', classes: 'always', switches: 'never' }],
     'prefer-named-capture-group': [ 0 ],
+    'prefer-object-spread'      : [ 1 ],
     'quote-props'               : [ 2, 'consistent-as-needed' ],
     'quotes'                    : [ 2, 'single' ],
     'require-unicode-regexp'    : [ 0 ],
+    'semi'                      : [ 2, 'always' ],
+    'semi-spacing'              : [ 2, { after: true, before: false }],
     'sort-imports'              : [ 0 ],
     // 'sort-imports'            : [ 2, { ignoreCase: true, ignoreMemberSort: false, memberSyntaxSortOrder: [ 'none', 'all', 'single', 'multiple' ]}],
     'sort-keys'                 : [ 0 ],
@@ -195,4 +195,4 @@ module.exports = {
     'valid-typeof'              : [ 2 ],
     'wrap-regex'                : [ 2 ],
   },
-}
+};
