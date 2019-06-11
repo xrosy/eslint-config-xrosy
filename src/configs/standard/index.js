@@ -26,6 +26,7 @@ module.exports = {
     'array-element-newline'     : [ 2, 'consistent' ],
     /* 需要括号箭头函数体 */
     'arrow-body-style'          : [ 2, 'as-needed', { requireReturnForObjectLiteral: true }],
+    'arrow-spacing'             : [ 2,{ after: true, before: true }],
     /**
      * 禁止或强制在代码块中开括号前和闭括号后有空格
      *  • always: 要求使用一个或多个空格
