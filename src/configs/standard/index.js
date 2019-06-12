@@ -9,7 +9,7 @@ module.exports = {
     'array-bracket-newline': [ 2, 'consistent' ],
     /* 禁止或强制在括号内使用空格 */
     'array-bracket-spacing': [ 2, 'always', {
-      objectsInArrays : false
+      objectsInArrays : false,
     }],
     /* 强制数组方法的回调函数中有 return 语句 */
     'array-callback-return'     : [ 2 ],
@@ -40,7 +40,7 @@ module.exports = {
     'class-methods-use-this'    : [ 0 ],
     'comma-dangle'              : [ 2, { arrays: 'only-multiline', exports: 'never', functions: 'ignore', imports: 'never', objects: 'always-multiline' }],
     'comma-spacing'             : [ 2, { after: true, before: false }],
-    'comma-style'               : [ 2, "last", { "exceptions": { "ArrayExpression": true, "ObjectExpression": true } }],
+    'comma-style'               : [ 2, 'last', { exceptions: { ArrayExpression: true, ObjectExpression: true } }],
     'complexity'                : [ 0 ],
     'consistent-return'         : [ 0 ],
     'curly'                     : [ 2, 'multi-line', 'consistent' ],
@@ -175,6 +175,6 @@ module.exports = {
     'spaced-comment'            : [ 2, 'always' ],
     'valid-jsdoc'               : [ 0 ],
     'valid-typeof'              : [ 2 ],
-    'wrap-regex'                : [ 2 ]
-  }
+    'wrap-regex'                : [ 2 ],
+  },
 };
