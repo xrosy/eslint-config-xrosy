@@ -11,6 +11,8 @@ module.exports = {
     'import/extensions'                : [ 0 ],
     // 'import/first'                      : [ 2, 'absolute-first' ],
     'import/first'                     : [ 1 ],
+    /** 禁止引用模块时使用绝对路径 */
+    'import/no-absolute-path'          : [ 2 ],
     'import/no-duplicates'             : [ 2 ],
     'import/no-extraneous-dependencies': [ 0 ],
     'import/no-unresolved'             : [ 0 ],

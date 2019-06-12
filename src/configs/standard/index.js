@@ -9,7 +9,7 @@ module.exports = {
     'array-bracket-newline': [ 2, 'consistent' ],
     /* 禁止或强制在括号内使用空格 */
     'array-bracket-spacing': [ 2, 'always', {
-      objectsInArrays : false,
+      objectsInArrays : false
     }],
     /* 强制数组方法的回调函数中有 return 语句 */
     'array-callback-return'     : [ 2 ],
@@ -26,7 +26,7 @@ module.exports = {
     'array-element-newline'     : [ 2, 'consistent' ],
     /* 需要括号箭头函数体 */
     'arrow-body-style'          : [ 2, 'as-needed', { requireReturnForObjectLiteral: true }],
-    'arrow-spacing'             : [ 2,{ after: true, before: true }],
+    'arrow-spacing'             : [ 2, { after: true, before: true }],
     /**
      * 禁止或强制在代码块中开括号前和闭括号后有空格
      *  • always: 要求使用一个或多个空格
@@ -38,8 +38,9 @@ module.exports = {
     'callback-return'           : [ 0 ],
     'capitalized-comments'      : [ 0 ],
     'class-methods-use-this'    : [ 0 ],
-    /* 需要或不允许后面的逗号 */
-    'comma-dangle'              : [ 2, 'always-multiline' ],
+    'comma-dangle'              : [ 2, { arrays: 'only-multiline', exports: 'never', functions: 'ignore', imports: 'never', objects: 'always-multiline' }],
+    'comma-spacing'             : [ 2, { after: true, before: false }],
+    'comma-style'               : [ 2, "last", { "exceptions": { "ArrayExpression": true, "ObjectExpression": true } }],
     'complexity'                : [ 0 ],
     'consistent-return'         : [ 0 ],
     'curly'                     : [ 2, 'multi-line', 'consistent' ],
@@ -48,14 +49,14 @@ module.exports = {
     'eol-last'                  : [ 2, 'always' ],
     'func-style'                : [ 0 ],
     'function-paren-newline'    : [ 1, 'consistent' ],
-    'id-length'                 : [ 2, { exceptions: [ 'e', 'i', 'k', 'x', 'X', 'z', 'Z' ],min: 1 }],
+    'id-length'                 : [ 2, { exceptions: [ 'e', 'i', 'k', 'x', 'X', 'z', 'Z' ], min: 1 }],
     'indent'                    : [ 2, 2, { SwitchCase: 1 }],
     'init-declarations'         : [ 0, 'always', { ignoreForLoopInit: true }],
     'jsx-quotes'                : [ 2, 'prefer-double' ],
-    'key-spacing'               : [ 2, { align: { afterColon: true, beforeColon: false, on: 'colon' }, multiLine: { afterColon: true, beforeColon: true }, singleLine: { afterColon: true, beforeColon: false }}],
+    'key-spacing'               : [ 2, { align: { afterColon: true, beforeColon: false, on: 'colon' }, multiLine: { afterColon: true, beforeColon: true }, singleLine: { afterColon: true, beforeColon: false } }],
     'keyword-spacing'           : [ 2, { after: true, before: true }],
     'lines-around-comment'      : [ 0, { allowBlockStart: true, allowClassStart: true, allowObjectStart: true, beforeBlockComment: false }],
-    'max-len'                   : [ 2, { code: 800,ignoreComments: true,ignoreRegExpLiterals: true,ignoreStrings: true,ignoreTemplateLiterals: true,ignoreTrailingComments: true,ignoreUrls: true }],
+    'max-len'                   : [ 2, { code: 800, ignoreComments: true, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreTrailingComments: true, ignoreUrls: true }],
     'max-lines'                 : [ 0 ],
     'max-lines-per-function'    : [ 0 ],
     'max-nested-callbacks'      : [ 2, { max: 2 }],
@@ -67,21 +68,22 @@ module.exports = {
     'new-parens'                : [ 2 ],
     'newline-before-return'     : [ 2 ],
     'newline-per-chained-call'  : [ 2, { ignoreChainWithDepth: 10 }],
-    'no-bitwise'                : [ 1, { allow: [ '~' ],int32Hint: true }],
+    'no-bitwise'                : [ 1, { allow: [ '~' ], int32Hint: true }],
     'no-confusing-arrow'        : [ 2, { allowParens: true }],
     'no-console'                : [ 1 ],
     'no-constant-condition'     : [ 2 ],
     'no-delete-var'             : [ 2 ],
     'no-dupe-args'              : [ 2 ],
     'no-empty'                  : [ 2 ],
-    'no-empty-function'         : [ 2, { allow: [ 'arrowFunctions', 'constructors', 'functions', 'getters', 'methods', 'setters' ]}],
+    'no-empty-function'         : [ 2, { allow: [ 'arrowFunctions', 'constructors', 'functions', 'getters', 'methods', 'setters' ] }],
     'no-ex-assign'              : [ 2 ],
-    'no-extra-parens'           : [ 2, 'all', { enforceForArrowConditionals: false,ignoreJSX: 'all',nestedBinaryExpressions: false,returnAssign: false }],
-    'no-implicit-coercion'      : [ 2, { allow: [ '+', '!!', '~' ]}],
+    'no-extra-parens'           : [ 2, 'all', { enforceForArrowConditionals: false, ignoreJSX: 'all', nestedBinaryExpressions: false, returnAssign: false }],
+    'no-extra-semi'             : [ 2 ],
+    'no-implicit-coercion'      : [ 2, { allow: [ '+', '!!', '~' ] }],
     'no-invalid-this'           : [ 0 ],
     'no-magic-numbers'          : [ 0 ],
-    'no-multi-spaces'           : [ 2, { exceptions: { ImportDeclaration: false, VariableDeclarator: false }}],
-    'no-multiple-empty-lines'   : [ 1, { max: 2,maxBOF: 2,maxEOF: 0 }],
+    'no-multi-spaces'           : [ 2, { exceptions: { ImportDeclaration: false, VariableDeclarator: false } }],
+    'no-multiple-empty-lines'   : [ 1, { max: 2, maxBOF: 2, maxEOF: 0 }],
     'no-negated-condition'      : [ 1 ],
     'no-new'                    : [ 0 ],
     'no-plusplus'               : [ 2, { allowForLoopAfterthoughts: true }],
@@ -96,7 +98,7 @@ module.exports = {
     'no-ternary'                : [ 0 ],
     'no-undef'                  : [ 2 ],
     'no-undef-init'             : [ 2 ],
-    'no-underscore-dangle'      : [ 0, { allowAfterSuper: true,allowAfterThis: true,enforceInMethodNames: false }],
+    'no-underscore-dangle'      : [ 0, { allowAfterSuper: true, allowAfterThis: true, enforceInMethodNames: false }],
     'no-unreachable'            : [ 0 ],
     'no-unsafe-negation'        : [ 2 ],
     'no-unused-expressions'     : [ 0 ],
@@ -119,10 +121,7 @@ module.exports = {
      *  • objectsInObjects: true      要求以对象元素开始或结尾的对象的花括号中有空格 (当第一个选项为 never 时生效)
      *  • objectsInObjects: false     禁止以对象元素开始或结尾的对象的花括号中有空格 (当第一个选项为 always 时生效)
      */
-    'object-curly-spacing'      : [ 2, 'always', {
-      arraysInObjects : false,
-      objectsInObjects: false,
-    }],
+    'object-curly-spacing'      : [ 2, 'always', { arraysInObjects: true, objectsInObjects: true }],
     /**
      * 强制将对象的属性放在不同的行上
      *
@@ -165,7 +164,8 @@ module.exports = {
     'quotes'                    : [ 2, 'single' ],
     'require-unicode-regexp'    : [ 0 ],
     'semi'                      : [ 2, 'always' ],
-    'semi-spacing'              : [ 2, { after: true, before: false }],
+    'semi-spacing'              : [ 2, { after: false, before: false }],
+    'semi-style'                : [ 2, 'last' ],
     'sort-imports'              : [ 0 ],
     // 'sort-imports'            : [ 2, { ignoreCase: true, ignoreMemberSort: false, memberSyntaxSortOrder: [ 'none', 'all', 'single', 'multiple' ]}],
     'sort-keys'                 : [ 0 ],
@@ -175,6 +175,6 @@ module.exports = {
     'spaced-comment'            : [ 2, 'always' ],
     'valid-jsdoc'               : [ 0 ],
     'valid-typeof'              : [ 2 ],
-    'wrap-regex'                : [ 2 ],
-  },
+    'wrap-regex'                : [ 2 ]
+  }
 };
