@@ -170,7 +170,7 @@ module.exports = {
     // 'sort-imports'            : [ 2, { ignoreCase: true, ignoreMemberSort: false, memberSyntaxSortOrder: [ 'none', 'all', 'single', 'multiple' ]}],
     'sort-keys'                 : [ 0 ],
     'sort-vars'                 : [ 2, { ignoreCase: true }],
-    'space-before-blocks'       : [ 2, { classes: 'always', functions: 'always', keywords: 'never' }],
+    'space-before-blocks'       : [ 2, { classes: 'always', functions: 'always', keywords: 'always' }],
     'space-infix-ops'           : [ 2 ],
     'spaced-comment'            : [ 2, 'always' ],
     'valid-jsdoc'               : [ 0 ],
