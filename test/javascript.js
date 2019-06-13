@@ -5,14 +5,15 @@ const fooArrowFunction = () => {};
 
 fooArrowFunction();
 
-function fooFunction () {
+function fooFunction() {
   const { href } = location;
   href;
 }
-
 
 fooFunction('asd', { b: 1 });
 
 const a = 1;
 
 const lll = { a: 1, ba: 22, aa: 1090, njdkjd: 1231 };
+
+fooFunction({ a: 1 });

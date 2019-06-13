@@ -1,16 +1,13 @@
 /* eslint sort-keys: [ 1 ] */
 
-
 module.exports = {
   // extends: [],
 
   rules : {
     /** 在数组开括号后和闭括号前强制换行 */
-    'array-bracket-newline': [ 2, 'consistent' ],
+    'array-bracket-newline'     : [ 2, 'consistent' ],
     /* 禁止或强制在括号内使用空格 */
-    'array-bracket-spacing': [ 2, 'always', {
-      objectsInArrays : false,
-    }],
+    'array-bracket-spacing'     : [ 2, 'always', { arraysInArrays: false, objectsInArrays: false, singleValue: true }],
     /* 强制数组方法的回调函数中有 return 语句 */
     'array-callback-return'     : [ 2 ],
     /**
@@ -40,7 +37,7 @@ module.exports = {
     'class-methods-use-this'    : [ 0 ],
     'comma-dangle'              : [ 2, { arrays: 'only-multiline', exports: 'never', functions: 'ignore', imports: 'never', objects: 'always-multiline' }],
     'comma-spacing'             : [ 2, { after: true, before: false }],
-    'comma-style'               : [ 2, 'last', { exceptions: { ArrayExpression: true, ObjectExpression: true } }],
+    'comma-style'               : [ 2, 'last', { exceptions: { ArrayExpression: true, ObjectExpression: true }}],
     'complexity'                : [ 0 ],
     'consistent-return'         : [ 0 ],
     'curly'                     : [ 2, 'multi-line', 'consistent' ],
@@ -53,7 +50,7 @@ module.exports = {
     'indent'                    : [ 2, 2, { SwitchCase: 1 }],
     'init-declarations'         : [ 0, 'always', { ignoreForLoopInit: true }],
     'jsx-quotes'                : [ 2, 'prefer-double' ],
-    'key-spacing'               : [ 2, { align: { afterColon: true, beforeColon: false, on: 'colon' }, multiLine: { afterColon: true, beforeColon: true }, singleLine: { afterColon: true, beforeColon: false } }],
+    'key-spacing'               : [ 2, { align: { afterColon: true, beforeColon: false, on: 'colon' }, multiLine: { afterColon: true, beforeColon: true }, singleLine: { afterColon: true, beforeColon: false }}],
     'keyword-spacing'           : [ 2, { after: true, before: true }],
     'lines-around-comment'      : [ 0, { allowBlockStart: true, allowClassStart: true, allowObjectStart: true, beforeBlockComment: false }],
     'max-len'                   : [ 2, { code: 800, ignoreComments: true, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreTrailingComments: true, ignoreUrls: true }],
@@ -75,14 +72,14 @@ module.exports = {
     'no-delete-var'             : [ 2 ],
     'no-dupe-args'              : [ 2 ],
     'no-empty'                  : [ 2 ],
-    'no-empty-function'         : [ 2, { allow: [ 'arrowFunctions', 'constructors', 'functions', 'getters', 'methods', 'setters' ] }],
+    'no-empty-function'         : [ 2, { allow: [ 'arrowFunctions', 'constructors', 'functions', 'getters', 'methods', 'setters' ]}],
     'no-ex-assign'              : [ 2 ],
     'no-extra-parens'           : [ 2, 'all', { enforceForArrowConditionals: false, ignoreJSX: 'all', nestedBinaryExpressions: false, returnAssign: false }],
     'no-extra-semi'             : [ 2 ],
-    'no-implicit-coercion'      : [ 2, { allow: [ '+', '!!', '~' ] }],
+    'no-implicit-coercion'      : [ 2, { allow: [ '+', '!!', '~' ]}],
     'no-invalid-this'           : [ 0 ],
     'no-magic-numbers'          : [ 0 ],
-    'no-multi-spaces'           : [ 2, { exceptions: { ImportDeclaration: false, VariableDeclarator: false } }],
+    'no-multi-spaces'           : [ 2, { exceptions: { ImportDeclaration: false, VariableDeclarator: false }}],
     'no-multiple-empty-lines'   : [ 1, { max: 2, maxBOF: 2, maxEOF: 0 }],
     'no-negated-condition'      : [ 1 ],
     'no-new'                    : [ 0 ],
@@ -121,7 +118,7 @@ module.exports = {
      *  • objectsInObjects: true      要求以对象元素开始或结尾的对象的花括号中有空格 (当第一个选项为 never 时生效)
      *  • objectsInObjects: false     禁止以对象元素开始或结尾的对象的花括号中有空格 (当第一个选项为 always 时生效)
      */
-    'object-curly-spacing'      : [ 2, 'always', { arraysInObjects: true, objectsInObjects: true }],
+    'object-curly-spacing'      : [ 2, 'always', { arraysInObjects: false, objectsInObjects: false }],
     /**
      * 强制将对象的属性放在不同的行上
      *
@@ -171,6 +168,8 @@ module.exports = {
     'sort-keys'                 : [ 0 ],
     'sort-vars'                 : [ 2, { ignoreCase: true }],
     'space-before-blocks'       : [ 2, { classes: 'always', functions: 'always', keywords: 'always' }],
+    /** 禁止或强制圆括号内的空格 */
+    'space-in-parens'           : [ 2, 'never', { exceptions: []}],
     'space-infix-ops'           : [ 2 ],
     'spaced-comment'            : [ 2, 'always' ],
     'valid-jsdoc'               : [ 0 ],
