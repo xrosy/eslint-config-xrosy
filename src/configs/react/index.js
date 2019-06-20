@@ -1,10 +1,7 @@
 const REACT$SORT_COMP_OPTS = require('./sort-comp.opt.js');
 
 module.exports = {
-  plugins : [
-    'jsx-a11y',
-    'react',
-  ],
+  plugins : [ 'jsx-a11y', 'react' ],
 
   extends : [
     // 'plugin:react/recommended',
@@ -43,6 +40,7 @@ module.exports = {
     'react/jsx-equals-spacing'                  : [ 2, 'never' ],
     'react/jsx-filename-extension'              : [ 0 ],
     'react/jsx-first-prop-new-line'             : [ 0 ],
+    'react/jsx-fragments'                       : [ 0 ],
     'react/jsx-handler-names'                   : [ 0 ],
     'react/jsx-indent'                          : [ 2, 2 ],
     'react/jsx-indent-props'                    : [ 2, 2 ],
