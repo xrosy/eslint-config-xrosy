@@ -55,7 +55,7 @@ module.exports = {
     'react/jsx-no-undef'                        : [ 2 ],
     'react/jsx-one-expression-per-line'         : [ 0 ],
     'react/jsx-pascal-case'                     : [ 2 ],
-    'react/jsx-props-no-spreading'              : [ 1, { html: 'enforce', custom: 'ignore' }],
+    'react/jsx-props-no-spreading'              : [ 0, { html: 'enforce', custom: 'ignore' }],
     'react/jsx-sort-default-props'              : [ 0 ],
     'react/jsx-sort-props'                      : [ 0 ],
     'react/jsx-tag-spacing'                     : [ 2, { afterOpening: 'never', beforeSelfClosing: 'always', closingSlash: 'never' }],
