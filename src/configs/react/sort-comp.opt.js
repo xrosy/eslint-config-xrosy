@@ -30,7 +30,7 @@ module.exports = {
       'contextTypes',
       'childContextTypes',
       'mixins',
-      'statics',
+      // 'statics',
       'defaultProps',
       'constructor',
       'getDefaultProps',
